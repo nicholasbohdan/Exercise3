@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style>
+    table {
+        width:100%;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px
+    }
+    table th {
+        background-color: black;
+        color: white;
+    }
+    button{
+        border: 1px solid black;
+        background-color: yellow;
+    }
+    .header{
+        background: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+        padding: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class='header'>
+        <select id="option">
+            <option value="name">Name</option>
+            <option value="rotation">Rotation Period</option>
+            <option value="orbital">Orbital Period</option>
+            <option value="diameter">Diameter</option>
+            <option value="climate">Climate</option>
+            <option value="gravity">Gravity</option>
+            <option value="terrain">Terrain</option>
+            <option value="surface">Surface Water</option>
+            <option value="population">Population</option>
+            <option value="created">Created</option>
+            <option value="edited">Edited</option>
+            <option value="url">Url</option>
+        </select>
+        <input id="search"  type="text"/>
+        
+        <select id="sort">
+            <option value="asc">ASC</option>
+            <option value="desc">DESC</option>
+        </select>
+        <button onClick="search()"> Search</button>
+    </div>
+    <div style="overflow-x:auto;">
+        <table id="table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Rotation Period</th>
+                <th>Orbital Period</th>
+                <th>Diameter</th>
+                <th>Climate</th>
+                <th>Gravity</th>
+                <th>Terrain</th>
+                <th>Surface Water</th>
+                <th>Population</th>
+                <th>Created</th>
+                <th>Edited</th>
+                <th>Url</th>
+            </tr>
+            </thead>
+            <tbody id ='body'>
+        
+            </tbody>
+        </table>                
+    </div>
+<script src='latihan3.js'></script>
+</body>
+</html>
